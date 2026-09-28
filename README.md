@@ -5,8 +5,9 @@ An operational supply chain and financial control system built in Excel to optim
 > 📊 **Project Status: ACTIVE / LIVE PIPELINE (In-Production)**  
 > *This system is actively managing a live event lifecycle culminating in December 2026. The database structure is refreshed weekly as real-time RSVP variations and revised vendor invoices are ingested.*
 
-## 📌 Executive Project Overview
-This repository contains an enterprise-grade...
+## 🚀 Interactive Dashboard Preview
+<img width="1886" height="813" alt="image" src="https://github.com/user-attachments/assets/ae641e96-e8f5-4633-a041-43c0f8a469ac" />
+
 
 ## 📌 Project Overview
 This project transforms a real-world, highly volatile event planning lifecycle (a close friend's daughter's wedding) into an enterprise-grade **Operations and Financial Analytics System**. 
