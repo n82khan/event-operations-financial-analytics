@@ -1,0 +1,3408 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0819.2015                               -->
+<workbook _.fcp.WorkbookFingerprinting.true...author-id='d9be4a80dcc6fa39049985975f593028a775031fb43689c5d56373935a1f1aec' _.fcp.WorkbookFingerprinting.true...creator-author-id='d9be4a80dcc6fa39049985975f593028a775031fb43689c5d56373935a1f1aec' _.fcp.WorkbookFingerprinting.true...creator-license-type='public' _.fcp.WorkbookFingerprinting.true...creator-machine-id='e8925e54dbcfc6a271acb40d3da80735dd95c98288dd1336d43038bad77a861d' _.fcp.WorkbookFingerprinting.true...license-type='public' _.fcp.WorkbookFingerprinting.true...machine-id='e8925e54dbcfc6a271acb40d3da80735dd95c98288dd1336d43038bad77a861d' original-version='18.1' source-build='2026.2.2 (20262.26.0819.2015)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
+  </document-format-change-manifest>
+  <repository-location derived-from='https://public.tableau.com/workbooks/Wedding-Dec2026?rev=1.3' id='Wedding-Dec2026' path='/workbooks' revision='1.4' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Master Task+ (Wedding_Analytics_Master)' inline='true' name='federated.1glp51t0txi6yo1f91cql1yy9vdm' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Wedding_Analytics_Master' name='excel-direct.16vv3181y6exqe135c5lz06i1ato'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Admin/Documents/Personal/Data Analyst by Alex/Project Build by Nadim/Dec-2026 Wedding/Wedding_Analytics_Master.xlsx' interpretationMode='0' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation type='collection'>
+          <relation connection='excel-direct.16vv3181y6exqe135c5lz06i1ato' name='Master Task' table='[&apos;Master Task$&apos;]' type='table'>
+            <columns gridOrigin='A1:P20:no:A1:P20:0' header='yes' outcome='2'>
+              <column datatype='string' name='Type' ordinal='0' />
+              <column datatype='string' name='Vendor Name/ Venue' ordinal='1' />
+              <column datatype='string' name='Task ID' ordinal='2' />
+              <column datatype='string' name='Category/Event' ordinal='3' />
+              <column datatype='string' name='Task Name' ordinal='4' />
+              <column datatype='string' name='Status' ordinal='5' />
+              <column datatype='string' name='Priority' ordinal='6' />
+              <column datatype='date' name='Due Date' ordinal='7' />
+              <column datatype='string' name='Assigned Owner' ordinal='8' />
+              <column datatype='integer' name='Estimated Days' ordinal='9' />
+              <column datatype='integer' name='Estimated Cost' ordinal='10' />
+              <column datatype='integer' name='Actual Cost' ordinal='11' />
+              <column datatype='integer' name='Payment  Made' ordinal='12' />
+              <column datatype='integer' name='Payment  Pending' ordinal='13' />
+              <column datatype='string' name='Days Pending' ordinal='14' />
+              <column datatype='string' name='Notes' ordinal='15' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.16vv3181y6exqe135c5lz06i1ato' name='Event' table='[Event$]' type='table'>
+            <columns gridOrigin='A1:F10:no:A1:F10:0' header='yes' outcome='6'>
+              <column datatype='string' name='Category/Event' ordinal='0' />
+              <column datatype='integer' name='Estimated Guests' ordinal='1' />
+              <column datatype='integer' name='Confirmed Guests' ordinal='2' />
+              <column datatype='string' name='Dietary Type' ordinal='3' />
+              <column datatype='integer' name='Cost Per Plate' ordinal='4' />
+              <column datatype='integer' name='Total Food Cost' ordinal='5' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.16vv3181y6exqe135c5lz06i1ato' name='Hospitality' table='[Hospitality$]' type='table'>
+            <columns gridOrigin='A1:M6:no:A1:M6:0' header='yes' outcome='2'>
+              <column datatype='string' name='Task ID' ordinal='0' />
+              <column datatype='string' name='Task Name' ordinal='1' />
+              <column datatype='integer' name='Family Count' ordinal='2' />
+              <column datatype='string' name='Side (Bride/Groom)' ordinal='3' />
+              <column datatype='string' name='Vendor Name/ Venue' ordinal='4' />
+              <column datatype='integer' name='No of Days' ordinal='5' />
+              <column datatype='integer' name='Room Rate Per Night' ordinal='6' />
+              <column datatype='integer' name='Room Number' ordinal='7' />
+              <column datatype='date' name='Check-in Date' ordinal='8' />
+              <column datatype='date' name='Check-out Date' ordinal='9' />
+              <column datatype='string' name='Payment Made' ordinal='10' />
+              <column datatype='string' name='Transport Required' ordinal='11' />
+              <column datatype='integer' name='Actual Accommodation Cost' ordinal='12' />
+            </columns>
+          </relation>
+        </relation>
+        <cols>
+          <map key='[Actual Accommodation Cost]' value='[Hospitality].[Actual Accommodation Cost]' />
+          <map key='[Actual Cost]' value='[Master Task].[Actual Cost]' />
+          <map key='[Assigned Owner]' value='[Master Task].[Assigned Owner]' />
+          <map key='[Category/Event (Event)]' value='[Event].[Category/Event]' />
+          <map key='[Category/Event]' value='[Master Task].[Category/Event]' />
+          <map key='[Check-in Date]' value='[Hospitality].[Check-in Date]' />
+          <map key='[Check-out Date]' value='[Hospitality].[Check-out Date]' />
+          <map key='[Confirmed Guests]' value='[Event].[Confirmed Guests]' />
+          <map key='[Cost Per Plate]' value='[Event].[Cost Per Plate]' />
+          <map key='[Days Pending]' value='[Master Task].[Days Pending]' />
+          <map key='[Dietary Type]' value='[Event].[Dietary Type]' />
+          <map key='[Due Date]' value='[Master Task].[Due Date]' />
+          <map key='[Estimated Cost]' value='[Master Task].[Estimated Cost]' />
+          <map key='[Estimated Days]' value='[Master Task].[Estimated Days]' />
+          <map key='[Estimated Guests]' value='[Event].[Estimated Guests]' />
+          <map key='[Family Count]' value='[Hospitality].[Family Count]' />
+          <map key='[No of Days]' value='[Hospitality].[No of Days]' />
+          <map key='[Notes]' value='[Master Task].[Notes]' />
+          <map key='[Payment  Made]' value='[Master Task].[Payment  Made]' />
+          <map key='[Payment  Pending]' value='[Master Task].[Payment  Pending]' />
+          <map key='[Payment Made]' value='[Hospitality].[Payment Made]' />
+          <map key='[Priority]' value='[Master Task].[Priority]' />
+          <map key='[Room Number]' value='[Hospitality].[Room Number]' />
+          <map key='[Room Rate Per Night]' value='[Hospitality].[Room Rate Per Night]' />
+          <map key='[Side (Bride/Groom)]' value='[Hospitality].[Side (Bride/Groom)]' />
+          <map key='[Status]' value='[Master Task].[Status]' />
+          <map key='[Task ID (Hospitality)]' value='[Hospitality].[Task ID]' />
+          <map key='[Task ID]' value='[Master Task].[Task ID]' />
+          <map key='[Task Name (Hospitality)]' value='[Hospitality].[Task Name]' />
+          <map key='[Task/Relative Name]' value='[Master Task].[Task/Relative Name]' />
+          <map key='[Total Food Cost]' value='[Event].[Total Food Cost]' />
+          <map key='[Transport Required]' value='[Hospitality].[Transport Required]' />
+          <map key='[Type]' value='[Master Task].[Type]' />
+          <map key='[Vendor Name/ Venue (Hospitality)]' value='[Hospitality].[Vendor Name/ Venue]' />
+          <map key='[Vendor Name/ Venue]' value='[Master Task].[Vendor Name/ Venue]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Master Task]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:P20:no:A1:P20:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Event]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:F10:no:A1:F10:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Hospitality]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:M6:no:A1:M6:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Type]</local-name>
+            <parent-name>[Master Task]</parent-name>
+            <remote-alias>Type</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Master Task_BCA7EF64BAB14105B1D332250A0B2E04]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Vendor Name/ Venue</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Vendor Name/ Venue]</local-name>
+            <parent-name>[Master Task]</parent-name>
+            <remote-alias>Vendor Name/ Venue</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Master Task_BCA7EF64BAB14105B1D332250A0B2E04]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Task ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Task ID]</local-name>
+            <parent-name>[Master Task]</parent-name>
+            <remote-alias>Task ID</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Master Task_BCA7EF64BAB14105B1D332250A0B2E04]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Category/Event</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Category/Event]</local-name>
+            <parent-name>[Master Task]</parent-name>
+            <remote-alias>Category/Event</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Master Task_BCA7EF64BAB14105B1D332250A0B2E04]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Task/Relative Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Task/Relative Name]</local-name>
+            <parent-name>[Master Task]</parent-name>
+            <remote-alias>Task/Relative Name</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Master Task_BCA7EF64BAB14105B1D332250A0B2E04]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Status</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Status]</local-name>
+            <parent-name>[Master Task]</parent-name>
+            <remote-alias>Status</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Master Task_BCA7EF64BAB14105B1D332250A0B2E04]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Priority</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Priority]</local-name>
+            <parent-name>[Master Task]</parent-name>
+            <remote-alias>Priority</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Master Task_BCA7EF64BAB14105B1D332250A0B2E04]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Due Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Due Date]</local-name>
+            <parent-name>[Master Task]</parent-name>
+            <remote-alias>Due Date</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[Master Task_BCA7EF64BAB14105B1D332250A0B2E04]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Assigned Owner</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Assigned Owner]</local-name>
+            <parent-name>[Master Task]</parent-name>
+            <remote-alias>Assigned Owner</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Master Task_BCA7EF64BAB14105B1D332250A0B2E04]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Estimated Days</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Estimated Days]</local-name>
+            <parent-name>[Master Task]</parent-name>
+            <remote-alias>Estimated Days</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Master Task_BCA7EF64BAB14105B1D332250A0B2E04]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Estimated Cost</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Estimated Cost]</local-name>
+            <parent-name>[Master Task]</parent-name>
+            <remote-alias>Estimated Cost</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Master Task_BCA7EF64BAB14105B1D332250A0B2E04]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Actual Cost</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Actual Cost]</local-name>
+            <parent-name>[Master Task]</parent-name>
+            <remote-alias>Actual Cost</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Master Task_BCA7EF64BAB14105B1D332250A0B2E04]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Payment  Made</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Payment  Made]</local-name>
+            <parent-name>[Master Task]</parent-name>
+            <remote-alias>Payment  Made</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Master Task_BCA7EF64BAB14105B1D332250A0B2E04]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Payment  Pending</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Payment  Pending]</local-name>
+            <parent-name>[Master Task]</parent-name>
+            <remote-alias>Payment  Pending</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Master Task_BCA7EF64BAB14105B1D332250A0B2E04]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Days Pending</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Days Pending]</local-name>
+            <parent-name>[Master Task]</parent-name>
+            <remote-alias>Days Pending</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Master Task_BCA7EF64BAB14105B1D332250A0B2E04]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Notes</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Notes]</local-name>
+            <parent-name>[Master Task]</parent-name>
+            <remote-alias>Notes</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Master Task_BCA7EF64BAB14105B1D332250A0B2E04]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Category/Event</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Category/Event (Event)]</local-name>
+            <parent-name>[Event]</parent-name>
+            <remote-alias>Category/Event</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Event_5B8EBD60427A43A5AB012F459BBE272C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Estimated Guests</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Estimated Guests]</local-name>
+            <parent-name>[Event]</parent-name>
+            <remote-alias>Estimated Guests</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Event_5B8EBD60427A43A5AB012F459BBE272C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Confirmed Guests</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Confirmed Guests]</local-name>
+            <parent-name>[Event]</parent-name>
+            <remote-alias>Confirmed Guests</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Event_5B8EBD60427A43A5AB012F459BBE272C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dietary Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Dietary Type]</local-name>
+            <parent-name>[Event]</parent-name>
+            <remote-alias>Dietary Type</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Event_5B8EBD60427A43A5AB012F459BBE272C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cost Per Plate</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Cost Per Plate]</local-name>
+            <parent-name>[Event]</parent-name>
+            <remote-alias>Cost Per Plate</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Event_5B8EBD60427A43A5AB012F459BBE272C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Food Cost</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Food Cost]</local-name>
+            <parent-name>[Event]</parent-name>
+            <remote-alias>Total Food Cost</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Event_5B8EBD60427A43A5AB012F459BBE272C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Task ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Task ID (Hospitality)]</local-name>
+            <parent-name>[Hospitality]</parent-name>
+            <remote-alias>Task ID</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Hospitality_E0F79484F2F34B479C47286904FDC797]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Task Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Task Name (Hospitality)]</local-name>
+            <parent-name>[Hospitality]</parent-name>
+            <remote-alias>Task Name</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Hospitality_E0F79484F2F34B479C47286904FDC797]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Family Count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Family Count]</local-name>
+            <parent-name>[Hospitality]</parent-name>
+            <remote-alias>Family Count</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Hospitality_E0F79484F2F34B479C47286904FDC797]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Side (Bride/Groom)</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Side (Bride/Groom)]</local-name>
+            <parent-name>[Hospitality]</parent-name>
+            <remote-alias>Side (Bride/Groom)</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Hospitality_E0F79484F2F34B479C47286904FDC797]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Vendor Name/ Venue</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Vendor Name/ Venue (Hospitality)]</local-name>
+            <parent-name>[Hospitality]</parent-name>
+            <remote-alias>Vendor Name/ Venue</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Hospitality_E0F79484F2F34B479C47286904FDC797]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>No of Days</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[No of Days]</local-name>
+            <parent-name>[Hospitality]</parent-name>
+            <remote-alias>No of Days</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Hospitality_E0F79484F2F34B479C47286904FDC797]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Room Rate Per Night</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Room Rate Per Night]</local-name>
+            <parent-name>[Hospitality]</parent-name>
+            <remote-alias>Room Rate Per Night</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Hospitality_E0F79484F2F34B479C47286904FDC797]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Room Number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Room Number]</local-name>
+            <parent-name>[Hospitality]</parent-name>
+            <remote-alias>Room Number</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Hospitality_E0F79484F2F34B479C47286904FDC797]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Check-in Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Check-in Date]</local-name>
+            <parent-name>[Hospitality]</parent-name>
+            <remote-alias>Check-in Date</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[Hospitality_E0F79484F2F34B479C47286904FDC797]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Check-out Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Check-out Date]</local-name>
+            <parent-name>[Hospitality]</parent-name>
+            <remote-alias>Check-out Date</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[Hospitality_E0F79484F2F34B479C47286904FDC797]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Payment Made</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Payment Made]</local-name>
+            <parent-name>[Hospitality]</parent-name>
+            <remote-alias>Payment Made</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Hospitality_E0F79484F2F34B479C47286904FDC797]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Transport Required</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Transport Required]</local-name>
+            <parent-name>[Hospitality]</parent-name>
+            <remote-alias>Transport Required</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Hospitality_E0F79484F2F34B479C47286904FDC797]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Actual Accommodation Cost</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Actual Accommodation Cost]</local-name>
+            <parent-name>[Hospitality]</parent-name>
+            <remote-alias>Actual Accommodation Cost</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Hospitality_E0F79484F2F34B479C47286904FDC797]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Actual Cost]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Assigned Owner]' role='dimension' type='nominal' />
+      <column caption='Cost Variance' datatype='integer' name='[Calculation_1046782954242048]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='Sum([Estimated Cost])- SUM([Actual Cost])' />
+      </column>
+      <column caption='Days Remaining Countdown' datatype='integer' name='[Calculation_1046782989398017]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='DATEDIFF(&apos;day&apos;, TODAY(), [Due Date])' />
+      </column>
+      <column caption='Pie Position' datatype='integer' name='[Calculation_1046783018029058]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Variance Color Indicator' datatype='string' name='[Calculation_1046783218339845]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='IF SUM([Actual Cost])&gt; SUM([Estimated Cost])&#13;&#10;THEN &quot;Red&quot; ELSE &quot;Green&quot; END' />
+      </column>
+      <column caption='Days Pending to Check-in' datatype='integer' name='[Calculation_1046783343308806]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='DATEDIFF(&apos;day&apos;, TODAY(), [Check-in Date])' />
+      </column>
+      <column caption='Days Pending to Check-out' datatype='integer' name='[Calculation_1046783343476743]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='DATEDIFF(&apos;day&apos;, TODAY(), [Check-out Date])' />
+      </column>
+      <column caption='Check-in Display' datatype='string' name='[Calculation_1046783356755976]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF ISNULL([Check-in Date]) THEN&#13;&#10;    &quot;&quot;&#13;&#10;ELSE&#13;&#10;    DATENAME(&apos;day&apos;, [Check-in Date])&#13;&#10;    + &quot; &quot;&#13;&#10;    + LEFT(DATENAME(&apos;month&apos;, [Check-in Date]), 3)&#13;&#10;END' />
+      </column>
+      <column caption='Check-out Display' datatype='string' name='[Calculation_1046783356993545]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF ISNULL([Check-out Date]) THEN&#13;&#10;    &quot;&quot;&#13;&#10;ELSE&#13;&#10;    DATENAME(&apos;day&apos;, [Check-out Date])&#13;&#10;    + &quot; &quot;&#13;&#10;    + LEFT(DATENAME(&apos;month&apos;, [Check-out Date]), 3)&#13;&#10;END' />
+      </column>
+      <column caption='Hotel Status' datatype='string' name='[Calculation_1046783564525578]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF TODAY() &lt; [Check-in Date] THEN&#13;&#10;    &quot;UPCOMING&quot;&#13;&#10;&#13;&#10;ELSEIF TODAY() &gt;= [Check-in Date]&#13;&#10;AND TODAY() &lt; [Check-out Date] THEN&#13;&#10;    &quot;CHECKED IN&quot;&#13;&#10;&#13;&#10;ELSEIF TODAY() = [Check-out Date] THEN&#13;&#10;    &quot;CHECK-OUT TODAY&quot;&#13;&#10;&#13;&#10;ELSE&#13;&#10;    &quot;CHECKED OUT&quot;&#13;&#10;END' />
+      </column>
+      <column caption='Stay Duration' datatype='integer' name='[Calculation_1046783569612811]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='DATEDIFF(&#13;&#10;&apos;day&apos;,&#13;&#10;[Check-in Date],&#13;&#10;[Check-out Date])' />
+      </column>
+      <column caption='Check-ins Today' datatype='integer' name='[Calculation_1046783573921804]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD(&#13;&#10;    IF [Check-in Date] = TODAY()&#13;&#10;    THEN [Task ID (Hospitality)]&#13;&#10;    END&#13;&#10;)' />
+      </column>
+      <column caption='Days Pending Status' datatype='string' name='[Calculation_1046783662444560]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Calculation_1046783343308806] &lt; 0 THEN&#13;&#10;    &quot;OVERDUE&quot;&#13;&#10;ELSEIF [Calculation_1046783343308806] = 0 THEN&#13;&#10;    &quot;TODAY&quot;&#13;&#10;ELSE&#13;&#10;    &quot;UPCOMING&quot;&#13;&#10;END' />
+      </column>
+      <column datatype='string' name='[Category/Event]' role='dimension' type='nominal' />
+      <column datatype='date' name='[Check-in Date]' role='dimension' type='ordinal' />
+      <column caption='Check-outs Today' datatype='integer' name='[Check-ins Today (copy)_1046783597756429]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD(&#13;&#10;    IF [Check-out Date] = TODAY()&#13;&#10;    THEN [Task ID (Hospitality)]&#13;&#10;    END&#13;&#10;)' />
+      </column>
+      <column caption='Current Guests' datatype='integer' name='[Check-ins Today (copy)_1046783599194126]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD(&#13;&#10;    IF [Check-in Date] &lt;= TODAY()&#13;&#10;AND [Check-out Date] &gt; TODAY()&#13;&#10;    THEN [Task ID (Hospitality)]&#13;&#10;    END&#13;&#10;)' />
+      </column>
+      <column caption='Upcoming Check-ins' datatype='integer' name='[Current Guests (copy)_1046783599898639]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD(&#13;&#10;    IF [Check-in Date] &gt; TODAY()&#13;&#10;    THEN [Task ID (Hospitality)]&#13;&#10;    END&#13;&#10;)' />
+      </column>
+      <column datatype='string' name='[Days Pending]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Estimated Cost]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Payment  Pending]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Room Number]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[Status]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Task/Relative Name]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Type]' role='dimension' type='nominal' />
+      <column caption='Event' datatype='table' name='[__tableau_internal_object_id__].[Event_5B8EBD60427A43A5AB012F459BBE272C]' role='measure' type='quantitative' />
+      <column caption='Hospitality' datatype='table' name='[__tableau_internal_object_id__].[Hospitality_E0F79484F2F34B479C47286904FDC797]' role='measure' type='quantitative' />
+      <column caption='Master Task' datatype='table' name='[__tableau_internal_object_id__].[Master Task_BCA7EF64BAB14105B1D332250A0B2E04]' role='measure' type='quantitative' />
+      <column-instance column='[Calculation_1046783343308806]' derivation='Min' name='[min:Calculation_1046783343308806:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Assigned Owner]' derivation='None' name='[none:Assigned Owner:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_1046783564525578]' derivation='None' name='[none:Calculation_1046783564525578:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Category/Event]' derivation='None' name='[none:Category/Event:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Type]' derivation='None' name='[none:Type:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Estimated Cost]' derivation='Sum' name='[pcrk:sum:Estimated Cost:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' rank-options='Competition,Ascending' type='PctRank' />
+      </column-instance>
+      <column-instance column='[Estimated Cost]' derivation='Sum' name='[rank:sum:Estimated Cost:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' rank-options='Competition,Descending' type='Rank' />
+      </column-instance>
+      <column-instance column='[Actual Cost]' derivation='Sum' name='[sum:Actual Cost:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1046782989398017]' derivation='Sum' name='[sum:Calculation_1046782989398017:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1046783343308806]' derivation='Sum' name='[sum:Calculation_1046783343308806:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1046783343476743]' derivation='Sum' name='[sum:Calculation_1046783343476743:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Estimated Cost]' derivation='Sum' name='[sum:Estimated Cost:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Payment  Pending]' derivation='Sum' name='[sum:Payment  Pending:qk]' pivot='key' type='quantitative' />
+      <group caption='Action (Assigned Owner,Category/Event,Days Pending,Status)' hidden='true' name='[Action (Assigned Owner,Category/Event,Days Pending,Status)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Assigned Owner]' />
+          <groupfilter function='level-members' level='[Category/Event]' />
+          <groupfilter function='level-members' level='[Days Pending]' />
+          <groupfilter function='level-members' level='[Status]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Category/Event)' hidden='true' name='[Action (Category/Event)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Category/Event]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Check-in Date,Room Number,Task/Relative Name)' hidden='true' name='[Action (Check-in Date,Room Number,Task/Relative Name)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Check-in Date]' />
+          <groupfilter function='level-members' level='[Room Number]' />
+          <groupfilter function='level-members' level='[Task/Relative Name]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Check-in Display,Check-out Display,Hotel Status,Room Number,Task/Relative Name)' hidden='true' name='[Action (Check-in Display,Check-out Display,Hotel Status,Room Number,Task/Relative Name)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Calculation_1046783356755976]' />
+          <groupfilter function='level-members' level='[Calculation_1046783356993545]' />
+          <groupfilter function='level-members' level='[Calculation_1046783564525578]' />
+          <groupfilter function='level-members' level='[Room Number]' />
+          <groupfilter function='level-members' level='[Task/Relative Name]' />
+        </groupfilter>
+      </group>
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/Admin/AppData/Local/Temp/TableauTemp/#TableauTemp_1pdo6ro1lxz62w17fy2li0srenh2.hyper' default-settings='yes' schema='Extract' sslmode='' update-time='09/24/2026 02:06:34 PM' username='tableau_internal_user'>
+          <relation type='collection'>
+            <relation name='Master Task_BCA7EF64BAB14105B1D332250A0B2E04' table='[Extract].[Master Task_BCA7EF64BAB14105B1D332250A0B2E04]' type='table' />
+            <relation name='Event_5B8EBD60427A43A5AB012F459BBE272C' table='[Extract].[Event_5B8EBD60427A43A5AB012F459BBE272C]' type='table' />
+            <relation name='Hospitality_E0F79484F2F34B479C47286904FDC797' table='[Extract].[Hospitality_E0F79484F2F34B479C47286904FDC797]' type='table' />
+          </relation>
+          <cols>
+            <map key='[Actual Accommodation Cost]' value='[Hospitality_E0F79484F2F34B479C47286904FDC797].[Actual Accommodation Cost]' />
+            <map key='[Actual Cost]' value='[Master Task_BCA7EF64BAB14105B1D332250A0B2E04].[Actual Cost]' />
+            <map key='[Assigned Owner]' value='[Master Task_BCA7EF64BAB14105B1D332250A0B2E04].[Assigned Owner]' />
+            <map key='[Category/Event (Event)]' value='[Event_5B8EBD60427A43A5AB012F459BBE272C].[Category/Event]' />
+            <map key='[Category/Event]' value='[Master Task_BCA7EF64BAB14105B1D332250A0B2E04].[Category/Event]' />
+            <map key='[Check-in Date]' value='[Hospitality_E0F79484F2F34B479C47286904FDC797].[Check-in Date]' />
+            <map key='[Check-out Date]' value='[Hospitality_E0F79484F2F34B479C47286904FDC797].[Check-out Date]' />
+            <map key='[Confirmed Guests]' value='[Event_5B8EBD60427A43A5AB012F459BBE272C].[Confirmed Guests]' />
+            <map key='[Cost Per Plate]' value='[Event_5B8EBD60427A43A5AB012F459BBE272C].[Cost Per Plate]' />
+            <map key='[Days Pending]' value='[Master Task_BCA7EF64BAB14105B1D332250A0B2E04].[Days Pending]' />
+            <map key='[Dietary Type]' value='[Event_5B8EBD60427A43A5AB012F459BBE272C].[Dietary Type]' />
+            <map key='[Due Date]' value='[Master Task_BCA7EF64BAB14105B1D332250A0B2E04].[Due Date]' />
+            <map key='[Estimated Cost]' value='[Master Task_BCA7EF64BAB14105B1D332250A0B2E04].[Estimated Cost]' />
+            <map key='[Estimated Days]' value='[Master Task_BCA7EF64BAB14105B1D332250A0B2E04].[Estimated Days]' />
+            <map key='[Estimated Guests]' value='[Event_5B8EBD60427A43A5AB012F459BBE272C].[Estimated Guests]' />
+            <map key='[Family Count]' value='[Hospitality_E0F79484F2F34B479C47286904FDC797].[Family Count]' />
+            <map key='[No of Days]' value='[Hospitality_E0F79484F2F34B479C47286904FDC797].[No of Days]' />
+            <map key='[Notes]' value='[Master Task_BCA7EF64BAB14105B1D332250A0B2E04].[Notes]' />
+            <map key='[Payment  Made]' value='[Master Task_BCA7EF64BAB14105B1D332250A0B2E04].[Payment  Made]' />
+            <map key='[Payment  Pending]' value='[Master Task_BCA7EF64BAB14105B1D332250A0B2E04].[Payment  Pending]' />
+            <map key='[Payment Made]' value='[Hospitality_E0F79484F2F34B479C47286904FDC797].[Payment Made]' />
+            <map key='[Priority]' value='[Master Task_BCA7EF64BAB14105B1D332250A0B2E04].[Priority]' />
+            <map key='[Room Number]' value='[Hospitality_E0F79484F2F34B479C47286904FDC797].[Room Number]' />
+            <map key='[Room Rate Per Night]' value='[Hospitality_E0F79484F2F34B479C47286904FDC797].[Room Rate Per Night]' />
+            <map key='[Side (Bride/Groom)]' value='[Hospitality_E0F79484F2F34B479C47286904FDC797].[Side (Bride/Groom)]' />
+            <map key='[Status]' value='[Master Task_BCA7EF64BAB14105B1D332250A0B2E04].[Status]' />
+            <map key='[Task ID (Hospitality)]' value='[Hospitality_E0F79484F2F34B479C47286904FDC797].[Task ID]' />
+            <map key='[Task ID]' value='[Master Task_BCA7EF64BAB14105B1D332250A0B2E04].[Task ID]' />
+            <map key='[Task Name (Hospitality)]' value='[Hospitality_E0F79484F2F34B479C47286904FDC797].[Task Name]' />
+            <map key='[Task/Relative Name]' value='[Master Task_BCA7EF64BAB14105B1D332250A0B2E04].[Task/Relative Name]' />
+            <map key='[Total Food Cost]' value='[Event_5B8EBD60427A43A5AB012F459BBE272C].[Total Food Cost]' />
+            <map key='[Transport Required]' value='[Hospitality_E0F79484F2F34B479C47286904FDC797].[Transport Required]' />
+            <map key='[Type]' value='[Master Task_BCA7EF64BAB14105B1D332250A0B2E04].[Type]' />
+            <map key='[Vendor Name/ Venue (Hospitality)]' value='[Hospitality_E0F79484F2F34B479C47286904FDC797].[Vendor Name/ Venue]' />
+            <map key='[Vendor Name/ Venue]' value='[Master Task_BCA7EF64BAB14105B1D332250A0B2E04].[Vendor Name/ Venue]' />
+          </cols>
+          <refresh>
+            <refresh-event add-from-file-path='Master Task+ (Wedding_Analytics_Master)' increment-value='%null%' refresh-type='create' rows-inserted='33' timestamp-start='2026-09-24 14:06:33.172' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Type]</local-name>
+              <parent-name>[Master Task_BCA7EF64BAB14105B1D332250A0B2E04]</parent-name>
+              <remote-alias>Type</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Master Task</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Master Task_BCA7EF64BAB14105B1D332250A0B2E04]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Vendor Name/ Venue</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Vendor Name/ Venue]</local-name>
+              <parent-name>[Master Task_BCA7EF64BAB14105B1D332250A0B2E04]</parent-name>
+              <remote-alias>Vendor Name/ Venue</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Master Task</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Master Task_BCA7EF64BAB14105B1D332250A0B2E04]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Task ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Task ID]</local-name>
+              <parent-name>[Master Task_BCA7EF64BAB14105B1D332250A0B2E04]</parent-name>
+              <remote-alias>Task ID</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Master Task</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Master Task_BCA7EF64BAB14105B1D332250A0B2E04]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Category/Event</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Category/Event]</local-name>
+              <parent-name>[Master Task_BCA7EF64BAB14105B1D332250A0B2E04]</parent-name>
+              <remote-alias>Category/Event</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Master Task</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Master Task_BCA7EF64BAB14105B1D332250A0B2E04]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Task/Relative Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Task/Relative Name]</local-name>
+              <parent-name>[Master Task_BCA7EF64BAB14105B1D332250A0B2E04]</parent-name>
+              <remote-alias>Task/Relative Name</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Master Task</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Master Task_BCA7EF64BAB14105B1D332250A0B2E04]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Status]</local-name>
+              <parent-name>[Master Task_BCA7EF64BAB14105B1D332250A0B2E04]</parent-name>
+              <remote-alias>Status</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Master Task</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Master Task_BCA7EF64BAB14105B1D332250A0B2E04]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Priority</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Priority]</local-name>
+              <parent-name>[Master Task_BCA7EF64BAB14105B1D332250A0B2E04]</parent-name>
+              <remote-alias>Priority</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Master Task</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Master Task_BCA7EF64BAB14105B1D332250A0B2E04]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Due Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Due Date]</local-name>
+              <parent-name>[Master Task_BCA7EF64BAB14105B1D332250A0B2E04]</parent-name>
+              <remote-alias>Due Date</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Master Task</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Master Task_BCA7EF64BAB14105B1D332250A0B2E04]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Assigned Owner</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Assigned Owner]</local-name>
+              <parent-name>[Master Task_BCA7EF64BAB14105B1D332250A0B2E04]</parent-name>
+              <remote-alias>Assigned Owner</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Master Task</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Master Task_BCA7EF64BAB14105B1D332250A0B2E04]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Estimated Days</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Estimated Days]</local-name>
+              <parent-name>[Master Task_BCA7EF64BAB14105B1D332250A0B2E04]</parent-name>
+              <remote-alias>Estimated Days</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Master Task</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Master Task_BCA7EF64BAB14105B1D332250A0B2E04]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Estimated Cost</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Estimated Cost]</local-name>
+              <parent-name>[Master Task_BCA7EF64BAB14105B1D332250A0B2E04]</parent-name>
+              <remote-alias>Estimated Cost</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Master Task</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Master Task_BCA7EF64BAB14105B1D332250A0B2E04]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Actual Cost</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Actual Cost]</local-name>
+              <parent-name>[Master Task_BCA7EF64BAB14105B1D332250A0B2E04]</parent-name>
+              <remote-alias>Actual Cost</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Master Task</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Master Task_BCA7EF64BAB14105B1D332250A0B2E04]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Payment  Made</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Payment  Made]</local-name>
+              <parent-name>[Master Task_BCA7EF64BAB14105B1D332250A0B2E04]</parent-name>
+              <remote-alias>Payment  Made</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Master Task</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Master Task_BCA7EF64BAB14105B1D332250A0B2E04]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Payment  Pending</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Payment  Pending]</local-name>
+              <parent-name>[Master Task_BCA7EF64BAB14105B1D332250A0B2E04]</parent-name>
+              <remote-alias>Payment  Pending</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Master Task</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Master Task_BCA7EF64BAB14105B1D332250A0B2E04]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Days Pending</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Days Pending]</local-name>
+              <parent-name>[Master Task_BCA7EF64BAB14105B1D332250A0B2E04]</parent-name>
+              <remote-alias>Days Pending</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Master Task</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Master Task_BCA7EF64BAB14105B1D332250A0B2E04]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Notes</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Notes]</local-name>
+              <parent-name>[Master Task_BCA7EF64BAB14105B1D332250A0B2E04]</parent-name>
+              <remote-alias>Notes</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Master Task</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Master Task_BCA7EF64BAB14105B1D332250A0B2E04]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Category/Event</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Category/Event (Event)]</local-name>
+              <parent-name>[Event_5B8EBD60427A43A5AB012F459BBE272C]</parent-name>
+              <remote-alias>Category/Event</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Event</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Event_5B8EBD60427A43A5AB012F459BBE272C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Estimated Guests</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Estimated Guests]</local-name>
+              <parent-name>[Event_5B8EBD60427A43A5AB012F459BBE272C]</parent-name>
+              <remote-alias>Estimated Guests</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Event</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Event_5B8EBD60427A43A5AB012F459BBE272C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Confirmed Guests</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Confirmed Guests]</local-name>
+              <parent-name>[Event_5B8EBD60427A43A5AB012F459BBE272C]</parent-name>
+              <remote-alias>Confirmed Guests</remote-alias>
+              <ordinal>18</ordinal>
+              <family>Event</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Event_5B8EBD60427A43A5AB012F459BBE272C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Dietary Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Dietary Type]</local-name>
+              <parent-name>[Event_5B8EBD60427A43A5AB012F459BBE272C]</parent-name>
+              <remote-alias>Dietary Type</remote-alias>
+              <ordinal>19</ordinal>
+              <family>Event</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Event_5B8EBD60427A43A5AB012F459BBE272C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Cost Per Plate</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Cost Per Plate]</local-name>
+              <parent-name>[Event_5B8EBD60427A43A5AB012F459BBE272C]</parent-name>
+              <remote-alias>Cost Per Plate</remote-alias>
+              <ordinal>20</ordinal>
+              <family>Event</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Event_5B8EBD60427A43A5AB012F459BBE272C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total Food Cost</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total Food Cost]</local-name>
+              <parent-name>[Event_5B8EBD60427A43A5AB012F459BBE272C]</parent-name>
+              <remote-alias>Total Food Cost</remote-alias>
+              <ordinal>21</ordinal>
+              <family>Event</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Event_5B8EBD60427A43A5AB012F459BBE272C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Task ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Task ID (Hospitality)]</local-name>
+              <parent-name>[Hospitality_E0F79484F2F34B479C47286904FDC797]</parent-name>
+              <remote-alias>Task ID</remote-alias>
+              <ordinal>22</ordinal>
+              <family>Hospitality</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Hospitality_E0F79484F2F34B479C47286904FDC797]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Task Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Task Name (Hospitality)]</local-name>
+              <parent-name>[Hospitality_E0F79484F2F34B479C47286904FDC797]</parent-name>
+              <remote-alias>Task Name</remote-alias>
+              <ordinal>23</ordinal>
+              <family>Hospitality</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Hospitality_E0F79484F2F34B479C47286904FDC797]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Family Count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Family Count]</local-name>
+              <parent-name>[Hospitality_E0F79484F2F34B479C47286904FDC797]</parent-name>
+              <remote-alias>Family Count</remote-alias>
+              <ordinal>24</ordinal>
+              <family>Hospitality</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Hospitality_E0F79484F2F34B479C47286904FDC797]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Side (Bride/Groom)</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Side (Bride/Groom)]</local-name>
+              <parent-name>[Hospitality_E0F79484F2F34B479C47286904FDC797]</parent-name>
+              <remote-alias>Side (Bride/Groom)</remote-alias>
+              <ordinal>25</ordinal>
+              <family>Hospitality</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Hospitality_E0F79484F2F34B479C47286904FDC797]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Vendor Name/ Venue</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Vendor Name/ Venue (Hospitality)]</local-name>
+              <parent-name>[Hospitality_E0F79484F2F34B479C47286904FDC797]</parent-name>
+              <remote-alias>Vendor Name/ Venue</remote-alias>
+              <ordinal>26</ordinal>
+              <family>Hospitality</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Hospitality_E0F79484F2F34B479C47286904FDC797]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>No of Days</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[No of Days]</local-name>
+              <parent-name>[Hospitality_E0F79484F2F34B479C47286904FDC797]</parent-name>
+              <remote-alias>No of Days</remote-alias>
+              <ordinal>27</ordinal>
+              <family>Hospitality</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Hospitality_E0F79484F2F34B479C47286904FDC797]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Room Rate Per Night</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Room Rate Per Night]</local-name>
+              <parent-name>[Hospitality_E0F79484F2F34B479C47286904FDC797]</parent-name>
+              <remote-alias>Room Rate Per Night</remote-alias>
+              <ordinal>28</ordinal>
+              <family>Hospitality</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Hospitality_E0F79484F2F34B479C47286904FDC797]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Room Number</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Room Number]</local-name>
+              <parent-name>[Hospitality_E0F79484F2F34B479C47286904FDC797]</parent-name>
+              <remote-alias>Room Number</remote-alias>
+              <ordinal>29</ordinal>
+              <family>Hospitality</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Hospitality_E0F79484F2F34B479C47286904FDC797]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Check-in Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Check-in Date]</local-name>
+              <parent-name>[Hospitality_E0F79484F2F34B479C47286904FDC797]</parent-name>
+              <remote-alias>Check-in Date</remote-alias>
+              <ordinal>30</ordinal>
+              <family>Hospitality</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Hospitality_E0F79484F2F34B479C47286904FDC797]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Check-out Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Check-out Date]</local-name>
+              <parent-name>[Hospitality_E0F79484F2F34B479C47286904FDC797]</parent-name>
+              <remote-alias>Check-out Date</remote-alias>
+              <ordinal>31</ordinal>
+              <family>Hospitality</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Hospitality_E0F79484F2F34B479C47286904FDC797]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Payment Made</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Payment Made]</local-name>
+              <parent-name>[Hospitality_E0F79484F2F34B479C47286904FDC797]</parent-name>
+              <remote-alias>Payment Made</remote-alias>
+              <ordinal>32</ordinal>
+              <family>Hospitality</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Hospitality_E0F79484F2F34B479C47286904FDC797]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Transport Required</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Transport Required]</local-name>
+              <parent-name>[Hospitality_E0F79484F2F34B479C47286904FDC797]</parent-name>
+              <remote-alias>Transport Required</remote-alias>
+              <ordinal>33</ordinal>
+              <family>Hospitality</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Hospitality_E0F79484F2F34B479C47286904FDC797]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Actual Accommodation Cost</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Actual Accommodation Cost]</local-name>
+              <parent-name>[Hospitality_E0F79484F2F34B479C47286904FDC797]</parent-name>
+              <remote-alias>Actual Accommodation Cost</remote-alias>
+              <ordinal>34</ordinal>
+              <family>Hospitality</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Hospitality_E0F79484F2F34B479C47286904FDC797]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1glp51t0txi6yo1f91cql1yy9vdm].[sum:Actual Cost:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1glp51t0txi6yo1f91cql1yy9vdm].[min:Calculation_1046783343308806:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1glp51t0txi6yo1f91cql1yy9vdm].[sum:Calculation_1046783343308806:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1glp51t0txi6yo1f91cql1yy9vdm].[sum:Payment  Pending:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1glp51t0txi6yo1f91cql1yy9vdm].[sum:Calculation_1046782989398017:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1glp51t0txi6yo1f91cql1yy9vdm].[sum:Calculation_1046783343476743:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.1glp51t0txi6yo1f91cql1yy9vdm]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1glp51t0txi6yo1f91cql1yy9vdm].[pcrk:sum:Estimated Cost:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1glp51t0txi6yo1f91cql1yy9vdm].[rank:sum:Estimated Cost:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1glp51t0txi6yo1f91cql1yy9vdm].[sum:Estimated Cost:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Assigned Owner:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Kausar&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Amin Mulla&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Category/Event:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Food (Miscellaneous)&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Accommodation&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Haldi&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Food&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Accommodation - Rupa&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Accommodation - Room 1&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Accommodation (Rupa)&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;Transport&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Accommodation (Room 1)&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Jewellery&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Food - Main Event&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Food (Breakfast)&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Miscellaneous&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Food - Breakfast&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>%all%</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Entertainment&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Food - Miscellaneous&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Food (Main Event)&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Clothes&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Hall&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Accommodation - Room 2&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;Make up&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Accommodation (Room 2)&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Type:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;BIG DAY&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;GIFT&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;EVENT&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>%all%</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;HOSTING&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;BRIDE&apos;S Family&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;GROOM&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;BRIDE&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;WALIMA DAY&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Calculation_1046783564525578:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;UPCOMING&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;CHECKED IN&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;CHECKED OUT&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;CHECK-OUT TODAY&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='Category/Event (Event)' />
+        <field-sort-custom-order field='Estimated Guests' />
+        <field-sort-custom-order field='Confirmed Guests' />
+        <field-sort-custom-order field='Dietary Type' />
+        <field-sort-custom-order field='Cost Per Plate' />
+        <field-sort-custom-order field='Total Food Cost' />
+      </field-sort-info>
+      <object-graph>
+        <objects>
+          <object caption='Event' id='Event_5B8EBD60427A43A5AB012F459BBE272C'>
+            <properties context=''>
+              <relation connection='excel-direct.16vv3181y6exqe135c5lz06i1ato' name='Event' table='[Event$]' type='table'>
+                <columns gridOrigin='A1:F10:no:A1:F10:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Category/Event' ordinal='0' />
+                  <column datatype='integer' name='Estimated Guests' ordinal='1' />
+                  <column datatype='integer' name='Confirmed Guests' ordinal='2' />
+                  <column datatype='string' name='Dietary Type' ordinal='3' />
+                  <column datatype='integer' name='Cost Per Plate' ordinal='4' />
+                  <column datatype='integer' name='Total Food Cost' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Event_5B8EBD60427A43A5AB012F459BBE272C' table='[Extract].[Event_5B8EBD60427A43A5AB012F459BBE272C]' type='table' />
+            </properties>
+          </object>
+          <object caption='Hospitality' id='Hospitality_E0F79484F2F34B479C47286904FDC797'>
+            <properties context=''>
+              <relation connection='excel-direct.16vv3181y6exqe135c5lz06i1ato' name='Hospitality' table='[Hospitality$]' type='table'>
+                <columns gridOrigin='A1:M6:no:A1:M6:0' header='yes' outcome='2'>
+                  <column datatype='string' name='Task ID' ordinal='0' />
+                  <column datatype='string' name='Task Name' ordinal='1' />
+                  <column datatype='integer' name='Family Count' ordinal='2' />
+                  <column datatype='string' name='Side (Bride/Groom)' ordinal='3' />
+                  <column datatype='string' name='Vendor Name/ Venue' ordinal='4' />
+                  <column datatype='integer' name='No of Days' ordinal='5' />
+                  <column datatype='integer' name='Room Rate Per Night' ordinal='6' />
+                  <column datatype='integer' name='Room Number' ordinal='7' />
+                  <column datatype='date' name='Check-in Date' ordinal='8' />
+                  <column datatype='date' name='Check-out Date' ordinal='9' />
+                  <column datatype='string' name='Payment Made' ordinal='10' />
+                  <column datatype='string' name='Transport Required' ordinal='11' />
+                  <column datatype='integer' name='Actual Accommodation Cost' ordinal='12' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Hospitality_E0F79484F2F34B479C47286904FDC797' table='[Extract].[Hospitality_E0F79484F2F34B479C47286904FDC797]' type='table' />
+            </properties>
+          </object>
+          <object caption='Master Task' id='Master Task_BCA7EF64BAB14105B1D332250A0B2E04'>
+            <properties context=''>
+              <relation connection='excel-direct.16vv3181y6exqe135c5lz06i1ato' name='Master Task' table='[&apos;Master Task$&apos;]' type='table'>
+                <columns gridOrigin='A1:P20:no:A1:P20:0' header='yes' outcome='2'>
+                  <column datatype='string' name='Type' ordinal='0' />
+                  <column datatype='string' name='Vendor Name/ Venue' ordinal='1' />
+                  <column datatype='string' name='Task ID' ordinal='2' />
+                  <column datatype='string' name='Category/Event' ordinal='3' />
+                  <column datatype='string' name='Task Name' ordinal='4' />
+                  <column datatype='string' name='Status' ordinal='5' />
+                  <column datatype='string' name='Priority' ordinal='6' />
+                  <column datatype='date' name='Due Date' ordinal='7' />
+                  <column datatype='string' name='Assigned Owner' ordinal='8' />
+                  <column datatype='integer' name='Estimated Days' ordinal='9' />
+                  <column datatype='integer' name='Estimated Cost' ordinal='10' />
+                  <column datatype='integer' name='Actual Cost' ordinal='11' />
+                  <column datatype='integer' name='Payment  Made' ordinal='12' />
+                  <column datatype='integer' name='Payment  Pending' ordinal='13' />
+                  <column datatype='string' name='Days Pending' ordinal='14' />
+                  <column datatype='string' name='Notes' ordinal='15' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Master Task_BCA7EF64BAB14105B1D332250A0B2E04' table='[Extract].[Master Task_BCA7EF64BAB14105B1D332250A0B2E04]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[Category/Event]' />
+              <expression op='[Category/Event (Event)]' />
+            </expression>
+            <first-end-point object-id='Master Task_BCA7EF64BAB14105B1D332250A0B2E04' />
+            <second-end-point object-id='Event_5B8EBD60427A43A5AB012F459BBE272C' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[Task ID]' />
+              <expression op='[Task ID (Hospitality)]' />
+            </expression>
+            <first-end-point object-id='Master Task_BCA7EF64BAB14105B1D332250A0B2E04' />
+            <second-end-point object-id='Hospitality_E0F79484F2F34B479C47286904FDC797' />
+          </relationship>
+        </relationships>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Filter 2 (generated)' name='[Action2_507A79FF9D9640A8A9B71B7BC6841E67]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Hospitality Dashboard' type='sheet' worksheet='Hotel Stay Timeline' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Hospitality Dashboard' />
+      </command>
+    </action>
+    <action caption='Filter 1 (generated)' name='[Action2_CE47A5AEBC3E46D59F7E50B516C06EB5]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Work Dashbaord' type='sheet' worksheet='Outstanding Liabilities' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Work Dashbaord' />
+      </command>
+    </action>
+    <action caption='Filter 3 (generated)' name='[Action3_12D1D112A9284B8D935DEA3D33DA4A6E]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Work Dashbaord' type='sheet' worksheet='Pending &amp; Completed' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Work Dashbaord' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Budget &amp; Variance'>
+      <repository-location id='BudgetVariance' path='/workbooks/Wedding-Dec2026' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Master Task+ (Wedding_Analytics_Master)' name='federated.1glp51t0txi6yo1f91cql1yy9vdm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1glp51t0txi6yo1f91cql1yy9vdm'>
+            <column datatype='integer' name='[Actual Cost]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Assigned Owner]' role='dimension' type='nominal' />
+            <column caption='Cost Variance' datatype='integer' name='[Calculation_1046782954242048]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='Sum([Estimated Cost])- SUM([Actual Cost])' />
+            </column>
+            <column datatype='string' name='[Category/Event]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Days Pending]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Estimated Cost]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Status]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Type]' role='dimension' type='nominal' />
+            <column-instance column='[Category/Event]' derivation='None' name='[none:Category/Event:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Type]' derivation='None' name='[none:Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Actual Cost]' derivation='Sum' name='[sum:Actual Cost:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Estimated Cost]' derivation='Sum' name='[sum:Estimated Cost:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1046782954242048]' derivation='User' name='[usr:Calculation_1046782954242048:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1glp51t0txi6yo1f91cql1yy9vdm].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1glp51t0txi6yo1f91cql1yy9vdm].[sum:Estimated Cost:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1glp51t0txi6yo1f91cql1yy9vdm].[sum:Actual Cost:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1glp51t0txi6yo1f91cql1yy9vdm].[usr:Calculation_1046782954242048:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1glp51t0txi6yo1f91cql1yy9vdm].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.1glp51t0txi6yo1f91cql1yy9vdm].[sum:Estimated Cost:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1glp51t0txi6yo1f91cql1yy9vdm].[sum:Actual Cost:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.1glp51t0txi6yo1f91cql1yy9vdm].[Action (Assigned Owner,Category/Event,Days Pending,Status)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action3_12D1D112A9284B8D935DEA3D33DA4A6E]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Assigned Owner]' />
+              <groupfilter function='level-members' level='[Category/Event]' />
+              <groupfilter function='level-members' level='[Days Pending]' />
+              <groupfilter function='level-members' level='[Status]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1glp51t0txi6yo1f91cql1yy9vdm].[Action (Category/Event)]'>
+            <groupfilter function='level-members' level='[Category/Event]' user:ui-action-filter='[Action2_CE47A5AEBC3E46D59F7E50B516C06EB5]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1glp51t0txi6yo1f91cql1yy9vdm].[:Measure Names]</column>
+            <column>[federated.1glp51t0txi6yo1f91cql1yy9vdm].[Action (Category/Event)]</column>
+            <column>[federated.1glp51t0txi6yo1f91cql1yy9vdm].[Action (Assigned Owner,Category/Event,Days Pending,Status)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1glp51t0txi6yo1f91cql1yy9vdm].[:Measure Names]' value='143' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Category/Event:nk]' value='200' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1glp51t0txi6yo1f91cql1yy9vdm].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows total='true'>([federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Type:nk] / [federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Category/Event:nk])</rows>
+        <cols onLeft='true' total='true'>[federated.1glp51t0txi6yo1f91cql1yy9vdm].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{B6991C49-76A2-4F56-8DEB-689A356C1AE7}' />
+    </worksheet>
+    <worksheet name='Hotel Status'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location id='HotelStatus' path='/workbooks/Wedding-Dec2026' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Master Task+ (Wedding_Analytics_Master)' name='federated.1glp51t0txi6yo1f91cql1yy9vdm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1glp51t0txi6yo1f91cql1yy9vdm'>
+            <column caption='Days Pending to Check-in' datatype='integer' name='[Calculation_1046783343308806]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='DATEDIFF(&apos;day&apos;, TODAY(), [Check-in Date])' />
+            </column>
+            <column caption='Check-in Display' datatype='string' name='[Calculation_1046783356755976]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF ISNULL([Check-in Date]) THEN&#13;&#10;    &quot;&quot;&#13;&#10;ELSE&#13;&#10;    DATENAME(&apos;day&apos;, [Check-in Date])&#13;&#10;    + &quot; &quot;&#13;&#10;    + LEFT(DATENAME(&apos;month&apos;, [Check-in Date]), 3)&#13;&#10;END' />
+            </column>
+            <column caption='Check-out Display' datatype='string' name='[Calculation_1046783356993545]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF ISNULL([Check-out Date]) THEN&#13;&#10;    &quot;&quot;&#13;&#10;ELSE&#13;&#10;    DATENAME(&apos;day&apos;, [Check-out Date])&#13;&#10;    + &quot; &quot;&#13;&#10;    + LEFT(DATENAME(&apos;month&apos;, [Check-out Date]), 3)&#13;&#10;END' />
+            </column>
+            <column caption='Hotel Status' datatype='string' name='[Calculation_1046783564525578]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF TODAY() &lt; [Check-in Date] THEN&#13;&#10;    &quot;UPCOMING&quot;&#13;&#10;&#13;&#10;ELSEIF TODAY() &gt;= [Check-in Date]&#13;&#10;AND TODAY() &lt; [Check-out Date] THEN&#13;&#10;    &quot;CHECKED IN&quot;&#13;&#10;&#13;&#10;ELSEIF TODAY() = [Check-out Date] THEN&#13;&#10;    &quot;CHECK-OUT TODAY&quot;&#13;&#10;&#13;&#10;ELSE&#13;&#10;    &quot;CHECKED OUT&quot;&#13;&#10;END' />
+            </column>
+            <column datatype='date' name='[Check-in Date]' role='dimension' type='ordinal' />
+            <column datatype='date' name='[Check-out Date]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Room Number]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Task/Relative Name]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1046783343308806]' derivation='Min' name='[min:Calculation_1046783343308806:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_1046783356755976]' derivation='None' name='[none:Calculation_1046783356755976:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1046783356993545]' derivation='None' name='[none:Calculation_1046783356993545:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1046783564525578]' derivation='None' name='[none:Calculation_1046783564525578:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Room Number]' derivation='None' name='[none:Room Number:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Task/Relative Name]' derivation='None' name='[none:Task/Relative Name:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1glp51t0txi6yo1f91cql1yy9vdm].[Action (Check-in Date,Room Number,Task/Relative Name)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action2_507A79FF9D9640A8A9B71B7BC6841E67]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Check-in Date]' />
+              <groupfilter function='level-members' level='[Room Number]' />
+              <groupfilter function='level-members' level='[Task/Relative Name]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1glp51t0txi6yo1f91cql1yy9vdm].[min:Calculation_1046783343308806:ok]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[min:Calculation_1046783343308806:ok]' />
+              <groupfilter function='member' level='[min:Calculation_1046783343308806:ok]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Task/Relative Name:nk]'>
+            <groupfilter function='level-members' level='[none:Task/Relative Name:nk]' user:ui-enumeration='all' user:ui-exclude='true' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Task/Relative Name:nk]' direction='ASC' measure-to-sort-by='[federated.1glp51t0txi6yo1f91cql1yy9vdm].[min:Calculation_1046783343308806:ok]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Task/Relative Name:nk]</column>
+            <column>[federated.1glp51t0txi6yo1f91cql1yy9vdm].[Action (Check-in Date,Room Number,Task/Relative Name)]</column>
+            <column>[federated.1glp51t0txi6yo1f91cql1yy9vdm].[min:Calculation_1046783343308806:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='269' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Calculation_1046783564525578:nk]' value='236' />
+            <format attr='width' field='[federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Task/Relative Name:nk]' value='260' />
+            <format attr='width' field='[federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Room Number:ok]' value='136' />
+            <format attr='width' field='[federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Calculation_1046783356755976:nk]' value='100' />
+            <format attr='width' field='[federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Calculation_1046783356993545:nk]' value='112' />
+            <format attr='width' field='[federated.1glp51t0txi6yo1f91cql1yy9vdm].[min:Calculation_1046783343308806:ok]' value='288' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='font-weight' value='normal' />
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='field-labels-decoration'>
+            <format attr='font-weight' value='bold' />
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='field-labels-spanner'>
+            <format attr='font-weight' scope='rows' value='normal' />
+            <format attr='font-weight' scope='cols' value='normal' />
+            <format attr='background-color' scope='rows' value='#00000000' />
+            <format attr='background-color' scope='cols' value='#adadad' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' field='[federated.1glp51t0txi6yo1f91cql1yy9vdm].[min:Calculation_1046783343308806:ok]' value='center' />
+            <format attr='vertical-align' field='[federated.1glp51t0txi6yo1f91cql1yy9vdm].[min:Calculation_1046783343308806:ok]' value='center' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <color column='[federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Calculation_1046783564525578:nk]' />
+              <text column='[federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Calculation_1046783564525578:nk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Calculation_1046783564525578:nk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Task/Relative Name:nk] / ([federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Room Number:ok] / ([federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Calculation_1046783356755976:nk] / ([federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Calculation_1046783356993545:nk] / [federated.1glp51t0txi6yo1f91cql1yy9vdm].[min:Calculation_1046783343308806:ok]))))</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{77173616-604B-4906-A6F3-5500679CC29D}' />
+    </worksheet>
+    <worksheet name='Hotel Stay Timeline'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location id='HotelStayTimeline' path='/workbooks/Wedding-Dec2026' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Master Task+ (Wedding_Analytics_Master)' name='federated.1glp51t0txi6yo1f91cql1yy9vdm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1glp51t0txi6yo1f91cql1yy9vdm'>
+            <column caption='Stay Duration' datatype='integer' name='[Calculation_1046783569612811]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='DATEDIFF(&#13;&#10;&apos;day&apos;,&#13;&#10;[Check-in Date],&#13;&#10;[Check-out Date])' />
+            </column>
+            <column datatype='date' name='[Check-in Date]' role='dimension' type='ordinal' />
+            <column datatype='date' name='[Check-out Date]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Room Number]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Task/Relative Name]' role='dimension' type='nominal' />
+            <column-instance column='[Check-in Date]' derivation='None' name='[none:Check-in Date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Room Number]' derivation='None' name='[none:Room Number:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Task/Relative Name]' derivation='None' name='[none:Task/Relative Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1046783569612811]' derivation='Sum' name='[sum:Calculation_1046783569612811:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Task/Relative Name:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Task/Relative Name:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:Task/Relative Name:nk]' member='&quot;Breakfast for Guest&quot;' />
+                <groupfilter function='member' level='[none:Task/Relative Name:nk]' member='&quot;Nikah Day Lunch For Guest&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Task/Relative Name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Room Number:ok]' value='40' />
+            <format attr='width' field='[federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Check-in Date:qk]' value='133' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Room Number:ok]' value='140' />
+            <format attr='width' field='[federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Task/Relative Name:nk]' value='196' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='font-weight' value='normal' />
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='field-labels-decoration'>
+            <format attr='font-weight' value='bold' />
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='field-labels-spanner'>
+            <format attr='font-weight' scope='rows' value='normal' />
+            <format attr='font-weight' scope='cols' value='normal' />
+            <format attr='background-color' scope='rows' value='#00000000' />
+            <format attr='background-color' scope='cols' value='#c0c0c0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='GanttBar' />
+            <encodings>
+              <size column='[federated.1glp51t0txi6yo1f91cql1yy9vdm].[sum:Calculation_1046783569612811:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Task/Relative Name:nk] / [federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Room Number:ok])</rows>
+        <cols>[federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Check-in Date:qk]</cols>
+      </table>
+      <simple-id uuid='{68B619B3-9D5A-45C8-8F55-93616A306B01}' />
+    </worksheet>
+    <worksheet name='KPI - Check-ins Today'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location id='KPI-Check-insToday' path='/workbooks/Wedding-Dec2026' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Master Task+ (Wedding_Analytics_Master)' name='federated.1glp51t0txi6yo1f91cql1yy9vdm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1glp51t0txi6yo1f91cql1yy9vdm'>
+            <column caption='Check-ins Today' datatype='integer' name='[Calculation_1046783573921804]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD(&#13;&#10;    IF [Check-in Date] = TODAY()&#13;&#10;    THEN [Task ID (Hospitality)]&#13;&#10;    END&#13;&#10;)' />
+            </column>
+            <column datatype='date' name='[Check-in Date]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Room Number]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Task ID (Hospitality)]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Task/Relative Name]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1046783573921804]' derivation='User' name='[usr:Calculation_1046783573921804:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1glp51t0txi6yo1f91cql1yy9vdm].[Action (Check-in Date,Room Number,Task/Relative Name)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action2_507A79FF9D9640A8A9B71B7BC6841E67]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Check-in Date]' />
+              <groupfilter function='level-members' level='[Room Number]' />
+              <groupfilter function='level-members' level='[Task/Relative Name]' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1glp51t0txi6yo1f91cql1yy9vdm].[Action (Check-in Date,Room Number,Task/Relative Name)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='field-labels'>
+            <format attr='background-color' value='#00000000' />
+            <format attr='font-weight' value='normal' />
+          </style-rule>
+          <style-rule element='field-labels-decoration'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='field-labels-spanner'>
+            <format attr='font-weight' scope='cols' value='normal' />
+            <format attr='background-color' scope='rows' value='#00000000' />
+            <format attr='background-color' scope='cols' value='#00000000' />
+            <format attr='separator' scope='cols' value='/' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1glp51t0txi6yo1f91cql1yy9vdm].[usr:Calculation_1046783573921804:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='11'>CHECK-INS TODAY</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontsize='26'><![CDATA[<[federated.1glp51t0txi6yo1f91cql1yy9vdm].[usr:Calculation_1046783573921804:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{7A4A1644-3B6F-4C17-BD7D-72B871EB7A78}' />
+    </worksheet>
+    <worksheet name='KPI - Check-outs Today'>
+      <repository-location id='KPI-Check-outsToday' path='/workbooks/Wedding-Dec2026' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Master Task+ (Wedding_Analytics_Master)' name='federated.1glp51t0txi6yo1f91cql1yy9vdm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1glp51t0txi6yo1f91cql1yy9vdm'>
+            <column datatype='date' name='[Check-in Date]' role='dimension' type='ordinal' />
+            <column caption='Check-outs Today' datatype='integer' name='[Check-ins Today (copy)_1046783597756429]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD(&#13;&#10;    IF [Check-out Date] = TODAY()&#13;&#10;    THEN [Task ID (Hospitality)]&#13;&#10;    END&#13;&#10;)' />
+            </column>
+            <column datatype='date' name='[Check-out Date]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Room Number]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Task ID (Hospitality)]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Task/Relative Name]' role='dimension' type='nominal' />
+            <column-instance column='[Check-ins Today (copy)_1046783597756429]' derivation='User' name='[usr:Check-ins Today (copy)_1046783597756429:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1glp51t0txi6yo1f91cql1yy9vdm].[Action (Check-in Date,Room Number,Task/Relative Name)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action2_507A79FF9D9640A8A9B71B7BC6841E67]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Check-in Date]' />
+              <groupfilter function='level-members' level='[Room Number]' />
+              <groupfilter function='level-members' level='[Task/Relative Name]' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1glp51t0txi6yo1f91cql1yy9vdm].[Action (Check-in Date,Room Number,Task/Relative Name)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='field-labels-spanner'>
+            <format attr='background-color' scope='rows' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1glp51t0txi6yo1f91cql1yy9vdm].[usr:Check-ins Today (copy)_1046783597756429:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='11'>CHECK-OUTS TODAY</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontsize='26'><![CDATA[<[federated.1glp51t0txi6yo1f91cql1yy9vdm].[usr:Check-ins Today (copy)_1046783597756429:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{D0F2CBF9-288D-432A-8C60-4139E6A8AF22}' />
+    </worksheet>
+    <worksheet name='KPI - Current Guests'>
+      <repository-location id='KPI-CurrentGuests' path='/workbooks/Wedding-Dec2026' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Master Task+ (Wedding_Analytics_Master)' name='federated.1glp51t0txi6yo1f91cql1yy9vdm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1glp51t0txi6yo1f91cql1yy9vdm'>
+            <column datatype='date' name='[Check-in Date]' role='dimension' type='ordinal' />
+            <column caption='Current Guests' datatype='integer' name='[Check-ins Today (copy)_1046783599194126]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD(&#13;&#10;    IF [Check-in Date] &lt;= TODAY()&#13;&#10;AND [Check-out Date] &gt; TODAY()&#13;&#10;    THEN [Task ID (Hospitality)]&#13;&#10;    END&#13;&#10;)' />
+            </column>
+            <column datatype='date' name='[Check-out Date]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Room Number]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Task ID (Hospitality)]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Task/Relative Name]' role='dimension' type='nominal' />
+            <column-instance column='[Check-ins Today (copy)_1046783599194126]' derivation='User' name='[usr:Check-ins Today (copy)_1046783599194126:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1glp51t0txi6yo1f91cql1yy9vdm].[Action (Check-in Date,Room Number,Task/Relative Name)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action2_507A79FF9D9640A8A9B71B7BC6841E67]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Check-in Date]' />
+              <groupfilter function='level-members' level='[Room Number]' />
+              <groupfilter function='level-members' level='[Task/Relative Name]' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1glp51t0txi6yo1f91cql1yy9vdm].[Action (Check-in Date,Room Number,Task/Relative Name)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1glp51t0txi6yo1f91cql1yy9vdm].[usr:Check-ins Today (copy)_1046783599194126:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='11'>CURRENT FAMILIES</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontsize='26'><![CDATA[<[federated.1glp51t0txi6yo1f91cql1yy9vdm].[usr:Check-ins Today (copy)_1046783599194126:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{A969D8E2-D99F-4E17-B123-04D2CF86A13B}' />
+    </worksheet>
+    <worksheet name='KPI - Upcoming Check-ins'>
+      <repository-location id='KPI-UpcomingCheck-ins' path='/workbooks/Wedding-Dec2026' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Master Task+ (Wedding_Analytics_Master)' name='federated.1glp51t0txi6yo1f91cql1yy9vdm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1glp51t0txi6yo1f91cql1yy9vdm'>
+            <column datatype='date' name='[Check-in Date]' role='dimension' type='ordinal' />
+            <column caption='Upcoming Check-ins' datatype='integer' name='[Current Guests (copy)_1046783599898639]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD(&#13;&#10;    IF [Check-in Date] &gt; TODAY()&#13;&#10;    THEN [Task ID (Hospitality)]&#13;&#10;    END&#13;&#10;)' />
+            </column>
+            <column datatype='integer' name='[Room Number]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Task ID (Hospitality)]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Task/Relative Name]' role='dimension' type='nominal' />
+            <column-instance column='[Current Guests (copy)_1046783599898639]' derivation='User' name='[usr:Current Guests (copy)_1046783599898639:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1glp51t0txi6yo1f91cql1yy9vdm].[Action (Check-in Date,Room Number,Task/Relative Name)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action2_507A79FF9D9640A8A9B71B7BC6841E67]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Check-in Date]' />
+              <groupfilter function='level-members' level='[Room Number]' />
+              <groupfilter function='level-members' level='[Task/Relative Name]' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1glp51t0txi6yo1f91cql1yy9vdm].[Action (Check-in Date,Room Number,Task/Relative Name)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1glp51t0txi6yo1f91cql1yy9vdm].[usr:Current Guests (copy)_1046783599898639:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='11'>UPCOMING CHECK-INS</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontsize='26'><![CDATA[<[federated.1glp51t0txi6yo1f91cql1yy9vdm].[usr:Current Guests (copy)_1046783599898639:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='center' />
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{6EBBDE33-446E-404B-AB4F-1C74B8E26A4F}' />
+    </worksheet>
+    <worksheet name='Outstanding Liabilities'>
+      <repository-location id='OutstandingLiabilities' path='/workbooks/Wedding-Dec2026' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Master Task+ (Wedding_Analytics_Master)' name='federated.1glp51t0txi6yo1f91cql1yy9vdm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1glp51t0txi6yo1f91cql1yy9vdm'>
+            <column datatype='string' name='[Assigned Owner]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Category/Event]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Days Pending]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Payment  Pending]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Status]' role='dimension' type='nominal' />
+            <column-instance column='[Category/Event]' derivation='None' name='[none:Category/Event:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Payment  Pending]' derivation='Sum' name='[sum:Payment  Pending:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1glp51t0txi6yo1f91cql1yy9vdm].[Action (Assigned Owner,Category/Event,Days Pending,Status)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action3_12D1D112A9284B8D935DEA3D33DA4A6E]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Assigned Owner]' />
+              <groupfilter function='level-members' level='[Category/Event]' />
+              <groupfilter function='level-members' level='[Days Pending]' />
+              <groupfilter function='level-members' level='[Status]' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1glp51t0txi6yo1f91cql1yy9vdm].[Action (Assigned Owner,Category/Event,Days Pending,Status)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Category/Event:nk]' />
+              <text column='[federated.1glp51t0txi6yo1f91cql1yy9vdm].[sum:Payment  Pending:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1glp51t0txi6yo1f91cql1yy9vdm].[sum:Payment  Pending:qk]</rows>
+        <cols>[federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Category/Event:nk]</cols>
+      </table>
+      <simple-id uuid='{0EB6E519-41BF-499A-9B78-CC80F489F67E}' />
+    </worksheet>
+    <worksheet name='Pending &amp; Completed'>
+      <repository-location id='PendingCompleted' path='/workbooks/Wedding-Dec2026' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Master Task+ (Wedding_Analytics_Master)' name='federated.1glp51t0txi6yo1f91cql1yy9vdm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1glp51t0txi6yo1f91cql1yy9vdm'>
+            <column datatype='string' name='[Assigned Owner]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Category/Event]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Days Pending]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Status]' role='dimension' type='nominal' />
+            <column-instance column='[Assigned Owner]' derivation='None' name='[none:Assigned Owner:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Category/Event]' derivation='None' name='[none:Category/Event:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Days Pending]' derivation='None' name='[none:Days Pending:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Status]' derivation='None' name='[none:Status:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1glp51t0txi6yo1f91cql1yy9vdm].[Action (Category/Event)]'>
+            <groupfilter function='level-members' level='[Category/Event]' user:ui-action-filter='[Action2_CE47A5AEBC3E46D59F7E50B516C06EB5]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Assigned Owner:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Assigned Owner:nk]' />
+              <groupfilter function='member' level='[none:Assigned Owner:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Assigned Owner:nk]</column>
+            <column>[federated.1glp51t0txi6yo1f91cql1yy9vdm].[Action (Category/Event)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Category/Event:nk]' />
+              <lod column='[federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Days Pending:nk]' />
+              <text column='[federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Category/Event:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>([federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Assigned Owner:nk] / [federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Status:nk])</cols>
+      </table>
+      <simple-id uuid='{BB240A83-467F-4E9E-83C6-D3CD83B04209}' />
+    </worksheet>
+    <worksheet name='Spending by Assigned Owner'>
+      <repository-location id='SpendingbyAssignedOwner' path='/workbooks/Wedding-Dec2026' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Master Task+ (Wedding_Analytics_Master)' name='federated.1glp51t0txi6yo1f91cql1yy9vdm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1glp51t0txi6yo1f91cql1yy9vdm'>
+            <column datatype='string' name='[Assigned Owner]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Category/Event]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Days Pending]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Payment  Made]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Status]' role='dimension' type='nominal' />
+            <column-instance column='[Assigned Owner]' derivation='None' name='[none:Assigned Owner:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Payment  Made]' derivation='Sum' name='[sum:Payment  Made:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1glp51t0txi6yo1f91cql1yy9vdm].[Action (Assigned Owner,Category/Event,Days Pending,Status)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action3_12D1D112A9284B8D935DEA3D33DA4A6E]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Assigned Owner]' />
+              <groupfilter function='level-members' level='[Category/Event]' />
+              <groupfilter function='level-members' level='[Days Pending]' />
+              <groupfilter function='level-members' level='[Status]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1glp51t0txi6yo1f91cql1yy9vdm].[Action (Category/Event)]'>
+            <groupfilter function='level-members' level='[Category/Event]' user:ui-action-filter='[Action2_CE47A5AEBC3E46D59F7E50B516C06EB5]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Assigned Owner:nk]'>
+            <groupfilter function='level-members' level='[none:Assigned Owner:nk]' user:ui-enumeration='all' user:ui-exclude='true' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Assigned Owner:nk]</column>
+            <column>[federated.1glp51t0txi6yo1f91cql1yy9vdm].[Action (Category/Event)]</column>
+            <column>[federated.1glp51t0txi6yo1f91cql1yy9vdm].[Action (Assigned Owner,Category/Event,Days Pending,Status)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='127' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Assigned Owner:nk]' />
+              <text column='[federated.1glp51t0txi6yo1f91cql1yy9vdm].[sum:Payment  Made:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1glp51t0txi6yo1f91cql1yy9vdm].[sum:Payment  Made:qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{218A9298-75C1-4B86-A6E9-92C815BD7071}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Hospitality Dashboard'>
+      <repository-location id='HospitalityDashboard' path='/workbooks/Wedding-Dec2026' revision='' />
+      <style />
+      <size maxheight='800' maxwidth='1100' minheight='800' minwidth='1100' preset-index='1' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='16' param='horz' type-v2='layout-flow' w='98546' x='727' y='1000'>
+            <zone h='98000' id='12' param='vert' type-v2='layout-flow' w='98546' x='727' y='1000'>
+              <zone fixed-size='220' h='27500' id='3' is-fixed='true' param='vert' type-v2='layout-flow' w='98546' x='727' y='1000'>
+                <zone fixed-size='39' forceUpdate='true' h='5875' id='5' is-fixed='true' type-v2='text' w='98546' x='727' y='1000'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#0c1a75' fontsize='18'>HOSPITALITY CONTROL CENTER</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='145' h='18125' id='6' is-fixed='true' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='98546' x='727' y='6875'>
+                  <zone h='18125' id='7' name='KPI - Check-ins Today' show-title='false' w='24637' x='727' y='6875'>
+                    <layout-cache cell-count-h='1' cell-count-w='1' type-h='cell' type-w='cell' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='solid' />
+                      <format attr='border-width' value='1' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='18125' id='8' name='KPI - Check-outs Today' show-title='false' w='24636' x='25364' y='6875'>
+                    <layout-cache cell-count-h='1' cell-count-w='1' type-h='cell' type-w='cell' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='solid' />
+                      <format attr='border-width' value='1' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='18125' id='9' name='KPI - Current Guests' show-title='false' w='24636' x='50000' y='6875'>
+                    <layout-cache cell-count-h='1' cell-count-w='1' type-h='cell' type-w='cell' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='solid' />
+                      <format attr='border-width' value='1' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='18125' id='10' name='KPI - Upcoming Check-ins' show-title='false' w='24637' x='74636' y='6875'>
+                    <layout-cache cell-count-h='1' cell-count-w='1' type-h='cell' type-w='cell' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='solid' />
+                      <format attr='border-width' value='1' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone fixed-size='243' h='30375' id='17' is-fixed='true' param='horz' type-v2='layout-flow' w='98546' x='727' y='28500'>
+                <zone h='30375' id='18' name='Hotel Stay Timeline' w='98546' x='727' y='28500'>
+                  <layout-cache cell-count-h='3' minwidth='438' non-cell-size-h='148' type-h='cell' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone h='40125' id='19' param='vert' type-v2='layout-flow' w='98546' x='727' y='58875'>
+                <zone h='40124' id='20' name='Hotel Status' w='98546' x='727' y='58875'>
+                  <layout-cache cell-count-h='4' non-cell-size-h='76' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='background-color' value='#f5f7fa' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1200' minheight='1200' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='38' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='37' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone fixed-size='39' forceUpdate='true' h='5875' id='5' type-v2='text' w='98546' x='727' y='1000'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#0c1a75' fontsize='18'>HOSPITALITY CONTROL CENTER</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='135' h='18125' id='7' is-fixed='true' name='KPI - Check-ins Today' show-title='false' w='24637' x='727' y='6875'>
+                  <layout-cache cell-count-h='1' cell-count-w='1' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='135' h='18125' id='8' is-fixed='true' name='KPI - Check-outs Today' show-title='false' w='24636' x='25364' y='6875'>
+                  <layout-cache cell-count-h='1' cell-count-w='1' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='135' h='18125' id='9' is-fixed='true' name='KPI - Current Guests' show-title='false' w='24636' x='50000' y='6875'>
+                  <layout-cache cell-count-h='1' cell-count-w='1' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='135' h='18125' id='10' is-fixed='true' name='KPI - Upcoming Check-ins' show-title='false' w='24637' x='74636' y='6875'>
+                  <layout-cache cell-count-h='1' cell-count-w='1' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='235' h='30375' id='18' is-fixed='true' name='Hotel Stay Timeline' w='98546' x='727' y='28500'>
+                  <layout-cache cell-count-h='3' minwidth='438' non-cell-size-h='148' type-h='cell' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='40124' id='20' is-fixed='true' name='Hotel Status' w='98546' x='727' y='58875'>
+                  <layout-cache cell-count-h='4' non-cell-size-h='76' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{2510DF79-3AD3-45C1-B187-1E8DBB98BF2E}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Work Dashbaord'>
+      <repository-location id='WorkDashbaord' path='/workbooks/Wedding-Dec2026' revision='' />
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98044' id='12' param='horz' type-v2='layout-flow' w='99002' x='499' y='978'>
+            <zone h='98044' id='5' type-v2='layout-basic' w='99002' x='499' y='978'>
+              <zone h='49022' id='3' name='Outstanding Liabilities' w='82983' x='499' y='978'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49022' id='9' name='Pending &amp; Completed' w='49501' x='499' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49022' id='10' name='Spending by Assigned Owner' w='16019' x='83482' y='978'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49022' id='14' name='Budget &amp; Variance' w='49501' x='50000' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1200' minheight='1200' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='30' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98044' id='29' param='vert' type-v2='layout-flow' w='99002' x='499' y='978'>
+                <zone fixed-size='280' h='49022' id='3' is-fixed='true' name='Outstanding Liabilities' w='82983' x='499' y='978'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49022' id='10' is-fixed='true' name='Spending by Assigned Owner' w='16019' x='83482' y='978'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49022' id='9' is-fixed='true' name='Pending &amp; Completed' w='49501' x='499' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49022' id='14' is-fixed='true' name='Budget &amp; Variance' w='49501' x='50000' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{4949D0B2-3391-422C-8E6C-F6ADDEBF767B}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' name='Outstanding Liabilities'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Category/Event:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Category/Event:nk]</field>
+            <field>[federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Days Pending:nk]</field>
+            <field>[federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Vendor Name/ Venue:nk]</field>
+            <field>[federated.1glp51t0txi6yo1f91cql1yy9vdm].[sum:Calculation_1046782989398017:qk]</field>
+            <field>[federated.1glp51t0txi6yo1f91cql1yy9vdm].[yr:Due Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{50971336-D9B9-4BB4-99CE-A05FBA4AE9CA}' />
+    </window>
+    <window class='worksheet' name='Spending by Assigned Owner'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Assigned Owner:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Assigned Owner:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{2334CAFF-B7C1-4CD9-B76C-694BBFB57A2F}' />
+    </window>
+    <window class='worksheet' name='Pending &amp; Completed'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Category/Event:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Assigned Owner:nk]</field>
+            <field>[federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Category/Event:nk]</field>
+            <field>[federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Days Pending:nk]</field>
+            <field>[federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Status:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{742C74BB-D607-4110-A2B9-7954732F7FDC}' />
+    </window>
+    <window class='worksheet' name='Budget &amp; Variance'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Category/Event:nk]</field>
+            <field>[federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Type:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{CB0F0FF3-C7CA-4FAD-B041-A4EC403ECBDA}' />
+    </window>
+    <window class='dashboard' name='Hospitality Dashboard'>
+      <viewpoints>
+        <viewpoint name='Hotel Status'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Hotel Stay Timeline'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI - Check-ins Today'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI - Check-outs Today'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI - Current Guests'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI - Upcoming Check-ins'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{8C14E7C0-E84A-429C-8B46-A6D0947886EB}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Work Dashbaord'>
+      <viewpoints>
+        <viewpoint name='Budget &amp; Variance' />
+        <viewpoint name='Outstanding Liabilities'>
+          <zoom type='entire-view' />
+          <highlight field='[federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Category/Event:nk]'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Pending &amp; Completed'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Spending by Assigned Owner'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{EA2D83A2-B0E7-47CE-AB6B-8E3971393BED}' />
+    </window>
+    <window class='worksheet' name='Hotel Status'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Calculation_1046783564525578:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-height' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1glp51t0txi6yo1f91cql1yy9vdm].[:Measure Names]</field>
+            <field>[federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Calculation_1046783356755976:ok]</field>
+            <field>[federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Calculation_1046783356993545:ok]</field>
+            <field>[federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Calculation_1046783564525578:nk]</field>
+            <field>[federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Room Number:ok]</field>
+            <field>[federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Task ID (Hospitality):nk]</field>
+            <field>[federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Task/Relative Name:nk]</field>
+            <field>[federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Vendor Name/ Venue:nk]</field>
+            <field>[federated.1glp51t0txi6yo1f91cql1yy9vdm].[yr:Calculation_1046783356755976:ok]</field>
+            <field>[federated.1glp51t0txi6yo1f91cql1yy9vdm].[yr:Check-out Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{9425B12C-6676-498B-9140-C6775598D402}' />
+    </window>
+    <window class='worksheet' name='Hotel Stay Timeline'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Room Number:ok]</field>
+            <field>[federated.1glp51t0txi6yo1f91cql1yy9vdm].[none:Task/Relative Name:nk]</field>
+            <field>[federated.1glp51t0txi6yo1f91cql1yy9vdm].[yr:Check-in Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{B06CB8FA-8971-49AD-9212-E35B8887C031}' />
+    </window>
+    <window class='worksheet' name='KPI - Check-ins Today'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{93BF99E5-A245-473D-9ED7-CB50F21FFAF4}' />
+    </window>
+    <window class='worksheet' name='KPI - Check-outs Today'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{587EA416-404A-4D6D-BC74-00A641578375}' />
+    </window>
+    <window class='worksheet' name='KPI - Current Guests'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{F3B6CB41-B9A4-4406-B4B8-F421AD6A1FC8}' />
+    </window>
+    <window class='worksheet' name='KPI - Upcoming Check-ins'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{6183FD96-F3EB-4322-8ECA-F7EFBD5CED79}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Work Dashbaord' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
