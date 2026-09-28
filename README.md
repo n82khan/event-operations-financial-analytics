@@ -8,6 +8,8 @@ An operational supply chain and financial control system built in Excel to optim
 ## 🚀 Interactive Dashboard Preview
 <img width="1886" height="813" alt="image" src="https://github.com/user-attachments/assets/ae641e96-e8f5-4633-a041-43c0f8a469ac" />
 
+<img width="1094" height="805" alt="image" src="https://github.com/user-attachments/assets/5b8864ed-9c26-4610-ae47-fb98af615eef" />
+
 
 ## 📌 Project Overview
 This project transforms a real-world, highly volatile event planning lifecycle (a close friend's daughter's wedding) into an enterprise-grade **Operations and Financial Analytics System**. 
